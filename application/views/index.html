@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Administrator</title>
+</head>
+<body class="index">
+    <div class="user">
+        <ul>
+            <li>
+               <span class="utama"><i class="fa fa-opencart"></i></span>
+               <span class="judul">Administrator</span>
+            </li>
+        </ul>
+    </div>
+    <div class="navigation">
+        <nav>
+
+            <ul>
+                <li>
+                    <a href="">
+                        <span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="icon"><i class="fa fa-user-o" aria-hidden="true"></i></span>
+                        <span class="title">Petugas</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="icon"><i class="fa fa-users" aria-hidden="true"></i></span>
+                        <span class="title">Pelanggan</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="icon"><i class="fa fa-shopping-bag" aria-hidden="true"></i></span>
+                        <span class="title">Barang</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="icon"><i class="fa fa-book" aria-hidden="true"></i></span>
+                        <span class="title">Laporan</span>
+                    </a>
+                </li>
+                <li class="logout">
+                    <a href="">
+                        <span class="icon"><i class="fa fa-sign-out"></i></span>
+                        <span class="title">Logout</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="konten">
+        <div class="container">
+            <h1>Dashboard</h1>
+            <br>
+            <div class="row">
+                <div class="col-xl-3 col-md-6 mb-4">
+                    <div class="card border-left-danger shadow h-100 py-2">
+                        <div class="card-body">
+                            <div class="row no-gutters align-items-center">
+                                <div class="col mr-2">
+                                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Petugas</div>
+                                    <div class="h5 mb-0 font-weight-bold text-gray-800">10</div>
+                                </div>
+                                <div class="col-auto">
+                                    <i class="fas fa-box fa-2x text-gray-300"><i class="fa fa-user"></i></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-xl-3 col-md-6 mb-4">
+                    <div class="card border-left-danger shadow h-100 py-2">
+                        <div class="card-body">
+                            <div class="row no-gutters align-items-center">
+                                <div class="col mr-2">
+                                    <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Jumlah Barang</div>
+                                    <div class="h5 mb-0 font-weight-bold text-gray-800">10</div>
+                                </div>
+                                <div class="col-auto">
+                                    <i class="fas fa-box fa-2x text-gray-300"><i class="fa fa-shopping-bag"></i></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-xl-3 col-md-6 mb-4">
+                    <div class="card border-left-danger shadow h-100 py-2">
+                        <div class="card-body">
+                            <div class="row no-gutters align-items-center">
+                                <div class="col mr-2">
+                                    <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">Jumlah Barang Dilelang</div>
+                                    <div class="h5 mb-0 font-weight-bold text-gray-800">10</div>
+                                </div>
+                                <div class="col-auto">
+                                    <i class="fas fa-box fa-2x text-gray-300"><i class="fa fa-shopping-cart"></i></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 mb-4">
+                    <div class="card border-left-danger shadow h-100 py-2">
+                        <div class="card-body">
+                            <div class="row no-gutters align-items-center">
+                                <div class="col mr-2">
+                                    <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">Jumlah pelanggan</div>
+                                    <div class="h5 mb-0 font-weight-bold text-gray-800">10</div>
+                                </div>
+                                <div class="col-auto">
+                                    <i class="fas fa-box fa-2x text-gray-300"><i class="fa fa-user"></i></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="toggle" onclick="toggleMenu()"></div>  
+</body>
+</html>
+
+<script type="text/javascript">
+    function toggleMenu(){
+        let navigation = document.querySelector('.navigation');
+        let toggle = document.querySelector('.toggle');
+        let konten = document.querySelector('.konten');
+        navigation.classList.toggle('active');
+        toggle.classList.toggle('active');
+        konten.classList.toggle('geser');
+    }
+</script>
